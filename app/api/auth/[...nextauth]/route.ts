@@ -1,6 +1,6 @@
 import { NEXT_AUTH } from "@/app/lib/auth";
-import NextAuth, { Awaitable, RequestInternal, User } from "next-auth";
-import CredentialsProvider from "next-auth/providers/credentials";
+import NextAuth from "next-auth";
+
 
 
 const handler = NextAuth(NEXT_AUTH);
