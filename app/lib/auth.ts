@@ -9,14 +9,14 @@ export const NEXT_AUTH = {
                 username: { label: 'Email', type: 'text', placeholder: 'Email' },
                 password: { label: 'Password', type: 'password', placeholder: 'Password' },
             },
-           async authorize(credentials:any) {
-               const name = credentials.username;
-            return {
-                id:'user1',
-                name:name,
-                email:'harkirat@gmail.com'
-            }
-           },
+            async authorize(credentials:any) {
+                const name = credentials.username;
+                    return {
+                        id:'user1',
+                        name:name,
+                        email:'harkirat@gmail.com'
+                    }
+            },
         }),
         GoogleProvider({
             clientId: process.env.GOOGLE_ID||'',
